@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import SidebarLinks from "./SidebarLinks";
+import LogoWithBrand from "../shared/LogoWithBrand";
 
 const Sidebar = () => {
   return (
@@ -8,15 +9,7 @@ const Sidebar = () => {
       className="flex-shrink-0
      w-[218px] bg-white h-screen max-sm:hidden"
     >
-      <div className=" flex items-center gap-4 p-12 ">
-        <Image
-          src="/assets/SubtractLogo.svg"
-          width={42}
-          height={42}
-          alt="logo"
-        />
-        <p className="font-nunito text-2xl font-semibold">Base</p>
-      </div>
+      <LogoWithBrand />
       <SidebarLinks />
     </section>
   );
