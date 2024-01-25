@@ -18,6 +18,9 @@ const config: Config = {
         "color-logo": "hsl(var(--color-logo))",
         "color-input-background": "hsl(var(--color-input-background))",
         "color-input-active": "hsl(var(--color-input-active))",
+        "color-sidebar-icon": "hsl(var(--color-sidebar-icon))",
+        "color-sidebar-icon-secondary":
+          "hsl(var(--color-sidebar-icon-secondary))",
       },
       fontFamily: {
         montserrat: ["var(--font-montserrat)"],

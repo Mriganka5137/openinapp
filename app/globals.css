@@ -13,6 +13,8 @@
     --color-logo: 240, 100%, 99%;
     --color-input-background: 0, 0%, 96%;
     --color-input-active: 0, 0%, 92%;
+    --color-sidebar-icon: 242, 8%, 63%;
+    --color-side-icon-secondary: 242, 91%, 8%;
   }
 
   * {
