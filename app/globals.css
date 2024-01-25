@@ -20,6 +20,9 @@
 
 @layer components {
   .hero {
-    clip-path: polygon(0 0, 100% 0, 81% 100%, 0% 100%);
+    background-image: url("/assets/background-hero.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }

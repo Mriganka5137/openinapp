@@ -6,7 +6,7 @@ import Twitter from "../icons/Twitter";
 
 const Socials = () => {
   return (
-    <div className=" flex justify-between w-80 ml-20">
+    <div className=" flex justify-between w-80 ml-20 max-lg:ml-5 max-lg:w-60">
       <Github className="w-11 h-11  hover:-translate-y-1 transition-all ease-in-out" />
       <Twitter className="w-11 h-11 hover:-translate-y-1 transition-all ease-in-out" />
       <LinkedIn className="w-12 h-12  hover:-translate-y-1 transition-all ease-in-out" />
