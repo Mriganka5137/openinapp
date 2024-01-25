@@ -15,6 +15,7 @@ const config: Config = {
         "color-field-darker": "hsl(var(--color-field-darker))",
         "color-signin-background": "hsl(var(--color-signin-background))",
         "color-upload-background": "hsl(var(--color-upload-background))",
+        "color-logo": "hsl(var(--color-logo))",
       },
       fontFamily: {
         montserrat: ["var(--font-montserrat)"],

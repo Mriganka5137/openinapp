@@ -10,9 +10,16 @@
     --color-field-darker: 0, 0%, 92%;
     --color-signin-background: 223, 100%, 99%;
     --color-upload-background: 240, 11%, 98%;
+    --color-logo: 240, 100%, 99%;
   }
 
   * {
     @apply p-0 m-0 box-border font-sans;
+  }
+}
+
+@layer components {
+  .hero {
+    clip-path: polygon(0 0, 100% 0, 81% 100%, 0% 100%);
   }
 }
