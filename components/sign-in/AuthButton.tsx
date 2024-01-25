@@ -15,7 +15,7 @@ const AuthButton = ({ iconLink, children }: AuthButtonProps) => {
         alt="icon"
         className=" w-4 h-4 "
       />{" "}
-      <span className="text-color-secondary-text text-xs font-light">
+      <span className="text-color-secondary-text text-xs font-light tracking-wide">
         {children}
       </span>
     </button>

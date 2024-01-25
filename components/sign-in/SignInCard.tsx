@@ -2,6 +2,7 @@ import React from "react";
 import AuthButton from "./AuthButton";
 import AuthButtonGroup from "./AuthButtonGroup";
 import Link from "next/link";
+import PrimaryButton from "../shared/PrimaryButton";
 
 const SignInCard = () => {
   return (
@@ -25,7 +26,14 @@ const SignInCard = () => {
         <Link href="" className="text-color-link font-lato">
           Forgot password?
         </Link>
+        <PrimaryButton>Sign In</PrimaryButton>
       </div>
+      <p className="font-lato text-base mt-5 text-center text-color-secondary-text font-light">
+        Don't have an account?{" "}
+        <Link href="" className="text-color-link">
+          Register here
+        </Link>
+      </p>
     </div>
   );
 };
