@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --color-brand: 242, 100%, 68%;
+    --color-link: 220, 100%, 68%;
+    --color-secondary-text: 0, 0%, 52%;
+    --color-field-darker: 0, 0%, 92%;
+    --color-signin-background: 223, 100%, 99%;
+    --color-upload-background: 240, 11%, 98%;
+  }
+
+  * {
+    @apply p-0 m-0 box-border font-sans;
+  }
+}

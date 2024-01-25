@@ -8,10 +8,19 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        "color-brand": "hsl(var(--color-brand))",
+        "color-link": "hsl(var(--color-link))",
+        "color-secondary-text": "hsl(var(--color-secondary-text))",
+        "color-field-darker": "hsl(var(--color-field-darker))",
+        "color-signin-background": "hsl(var(--color-signin-background))",
+        "color-upload-background": "hsl(var(--color-upload-background))",
+      },
+      fontFamily: {
+        montserrat: ["var(--font-montserrat)"],
+        lato: ["var(--font-lato)"],
+        nunito: ["var(--font-nunito)"],
+        figTree: ["var(--font-figtree)"],
       },
     },
   },
