@@ -16,6 +16,8 @@ const config: Config = {
         "color-signin-background": "hsl(var(--color-signin-background))",
         "color-upload-background": "hsl(var(--color-upload-background))",
         "color-logo": "hsl(var(--color-logo))",
+        "color-input-background": "hsl(var(--color-input-background))",
+        "color-input-active": "hsl(var(--color-input-active))",
       },
       fontFamily: {
         montserrat: ["var(--font-montserrat)"],
