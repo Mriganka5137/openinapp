@@ -16,7 +16,7 @@
   }
 
   * {
-    @apply p-0 m-0 box-border font-sans;
+    @apply p-0 m-0 box-border font-sans transition-all duration-200 ease-in-out;
   }
 }
 

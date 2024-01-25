@@ -1,3 +1,4 @@
+import Footer from "@/components/sign-in/Footer";
 import Hero from "@/components/sign-in/Hero";
 import SignIn from "@/components/sign-in/SignIn";
 import SignInNavbar from "@/components/sign-in/SignInNavbar";
@@ -9,6 +10,7 @@ const SignInPage = () => {
       <SignInNavbar />
       <Hero />
       <SignIn />
+      <Footer />
     </main>
   );
 };
