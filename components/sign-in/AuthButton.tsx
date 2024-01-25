@@ -7,7 +7,7 @@ interface AuthButtonProps {
 
 const AuthButton = ({ iconLink, children }: AuthButtonProps) => {
   return (
-    <button className=" flex bg-white items-center rounded-lg px-5 py-2 gap-2.5  min-w-[197px]">
+    <button className=" flex bg-white items-center rounded-lg px-5 py-2 gap-2.5 max-sm:px-3 max-sm:gap-1.5">
       <Image
         src={iconLink}
         width={100}
@@ -15,7 +15,7 @@ const AuthButton = ({ iconLink, children }: AuthButtonProps) => {
         alt="icon"
         className=" w-4 h-4 "
       />{" "}
-      <span className="text-color-secondary-text text-xs font-light tracking-wide">
+      <span className="text-color-secondary-text text-xs font-light tracking-wide max-sm:text-[10px] ">
         {children}
       </span>
     </button>

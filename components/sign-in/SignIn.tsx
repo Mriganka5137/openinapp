@@ -2,11 +2,7 @@ import SignInCard from "./SignInCard";
 
 const SignIn = () => {
   return (
-    <section className="w-1/2  px-24 py-60">
-      <h2 className="font-montserrat font-bold text-4xl">Sign In</h2>
-      <p className="font-lato text-base mt-1.5 tracking-wide">
-        Sign in to your account
-      </p>
+    <section className="w-1/2 h-full pl-24 py-60  max-lg:px-10   max-lg:w-full  max-lg:p-0 flex justify-center items-center max-sm:p-4 max-sm:py-7  max-sm:items-start">
       <SignInCard />
     </section>
   );

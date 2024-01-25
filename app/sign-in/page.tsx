@@ -1,10 +1,12 @@
 import Hero from "@/components/sign-in/Hero";
 import SignIn from "@/components/sign-in/SignIn";
+import SignInNavbar from "@/components/sign-in/SignInNavbar";
 import React from "react";
 
 const SignInPage = () => {
   return (
-    <main className=" w-full h-screen flex justify-between bg-color-signin-background">
+    <main className=" hero w-full h-screen flex justify-between bg-color-signin-background max-lg:flex-col max-lg:justify-start">
+      <SignInNavbar />
       <Hero />
       <SignIn />
     </main>
