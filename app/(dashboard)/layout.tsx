@@ -13,7 +13,7 @@ const layout = ({ children }: Props) => {
   return (
     <section className="flex overflow-hidden">
       <Sidebar />
-      <div className="flex flex-col w-full bg-color-upload-background">
+      <div className="flex flex-col w-full bg-color-upload-background h-screen">
         <div className=" w-full flex justify-between px-[30px] pt-12 max-sm:hidden">
           <Header />
           <ProfileIcon />

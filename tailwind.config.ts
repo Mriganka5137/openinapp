@@ -23,6 +23,9 @@ const config: Config = {
           "hsl(var(--color-sidebar-icon-secondary))",
 
         "color-light-bulma": "hsl(var(--color-light-bulma))",
+        "color-light-beerus": "hsl(var(--color-light-beerus))",
+        "color-light-trunks": "hsl(var(--color-light-trunks))",
+        "color-error": "hsl(var(--color-error))",
       },
       fontFamily: {
         montserrat: ["var(--font-montserrat)"],

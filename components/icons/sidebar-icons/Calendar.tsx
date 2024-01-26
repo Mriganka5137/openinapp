@@ -11,7 +11,7 @@ const Calendar = ({ className }: Props) => {
   return (
     <svg
       className={cn(
-        "fill-color-sidebar-icon-secondary w-6 h-6",
+        "fill-color-sidebar-icon-secondary w-6 h-6 transition-colors duration-0",
         className,
         path === route && "fill-color-brand"
       )}
