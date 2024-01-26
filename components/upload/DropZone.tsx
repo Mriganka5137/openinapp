@@ -1,9 +1,14 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
+import BeforeUpload from "./BeforeUpload";
+import AfterUpload from "./AfterUpload";
+import { useStore } from "@/lib/store";
 
 const DropZone = () => {
-  const [files, setFiles] = useState<FileList | null>(null);
+  const { files, setFiles } = useStore();
+  // const [files, setFiles] = useState<FileList | null>(null);
+  // const [isSubmitting, setIsSubmitting] = useState(false);
   const handleDragOver = (e: React.DragEvent) => {
     e.preventDefault();
   };
@@ -24,7 +29,7 @@ const DropZone = () => {
 
   return (
     <div
-      className=" w-full border border-dashed h-full border-color-light-beerus rounded-lg flex justify-center items-center flex-col font-figTree"
+      className=" w-full h-[258px] border border-dashed  border-color-light-beerus rounded-lg flex justify-center items-center flex-col font-figTree"
       onDragOver={handleDragOver}
       onDrop={handleDrop}
     >
@@ -36,35 +41,9 @@ const DropZone = () => {
         className="mb-5"
       />
       {files ? (
-        <div className="flex flex-col  items-center gap-4">
-          <p className="text-base font-normal text-color-light-trunks text-center font-figTree">
-            {files[0].name}
-          </p>
-          <button
-            onClick={() => setFiles(null)}
-            className="text-[14px] font-figTree text-center text-color-error"
-          >
-            Remove
-          </button>
-        </div>
+        <AfterUpload files={files} setFiles={setFiles} />
       ) : (
-        <div className=" flex gap-1">
-          <p className="text-color-light-trunks">
-            Drop your Excel sheet here or
-          </p>
-          <input
-            id="file"
-            type="file"
-            onChange={handleFileChange}
-            multiple
-            accept=".xlsx, .xls, .csv"
-            placeholder="browse"
-            className="hidden"
-          />
-          <label htmlFor="file" className="text-color-brand cursor-pointer">
-            browse
-          </label>
-        </div>
+        <BeforeUpload handleFileChange={handleFileChange} />
       )}
     </div>
   );

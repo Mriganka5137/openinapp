@@ -6,7 +6,7 @@ import React from "react";
 
 const SignInPage = () => {
   return (
-    <main className=" hero w-full h-screen flex justify-between bg-color-signin-background max-lg:flex-col max-lg:justify-start">
+    <main className=" w-full max-h-screen h-screen flex justify-between bg-color-signin-background max-lg:flex-col max-lg:justify-start ">
       <SignInNavbar />
       <Hero />
       <SignIn />

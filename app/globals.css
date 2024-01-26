@@ -28,11 +28,8 @@
 
 @layer components {
   .hero {
-    background-image: url("/assets/background-hero.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: auto;
-    @apply max-lg:bg-none;
+    clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
+    @apply bg-color-brand max-lg:bg-none;
   }
 
   label {
