@@ -54,7 +54,7 @@ const UploaderContainer = () => {
         )}
       >
         {submitting ? (
-          <div className="w-8 h-8 border-4 border-white rounded-full loader"></div>
+          <div className="w-5 h-5 border-2 border-white rounded-full loader"></div>
         ) : (
           <span className=" text-[14px] font-figTree font-light">
             <Image

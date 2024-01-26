@@ -6,7 +6,10 @@ interface Props {
 const BeforeUpload = ({ handleFileChange }: Props) => {
   return (
     <div className=" flex gap-1">
-      <p className="text-color-light-trunks">Drop your Excel sheet here or</p>
+      <p className="text-color-light-trunks">
+        <span className="max-sm:hidden">Drop your Excel sheet here or</span>
+        <span className="sm:hidden"> Upload your Excel sheet </span>
+      </p>
       <input
         id="file"
         type="file"
@@ -17,7 +20,8 @@ const BeforeUpload = ({ handleFileChange }: Props) => {
         className="hidden"
       />
       <label htmlFor="file" className="text-color-brand cursor-pointer">
-        browse
+        <span className="max-sm:hidden">browse</span>
+        <span className="sm:hidden">here</span>
       </label>
     </div>
   );
