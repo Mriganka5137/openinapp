@@ -7,7 +7,7 @@ const Sidebar = () => {
   return (
     <section
       className="flex-shrink-0
-     w-[218px] bg-white h-screen max-sm:hidden"
+     w-[218px] bg-white h-screen max-lg:hidden"
     >
       <LogoWithBrand />
       <SidebarLinks />

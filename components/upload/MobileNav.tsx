@@ -5,7 +5,7 @@ import HamburgerMenu from "../icons/HamburgerMenu";
 
 const MobileNav = () => {
   return (
-    <nav className=" sm:hidden flex bg-white justify-between px-5 py-7">
+    <nav className=" lg:hidden flex bg-white justify-between px-5 py-7">
       <div className="flex items-center gap-4">
         <HamburgerMenu />
         <LogoWithBrand className="p-0" />

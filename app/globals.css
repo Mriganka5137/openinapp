@@ -19,10 +19,11 @@
     --color-light-beerus: 0, 0%, 92%;
     --color-light-trunks: 214 4% 61%;
     --color-error: 0, 65%, 51%;
+    --color-select-border: 0, 0%, 95%;
   }
 
   * {
-    @apply p-0 m-0 box-border font-sans transition-all duration-200 ease-in-out;
+    @apply invisible-scrollbar p-0 m-0 box-border font-sans transition-all duration-200 ease-in-out;
   }
 }
 
@@ -51,4 +52,17 @@
 .loader {
   border-right-color: transparent;
   animation: loader-rotate 1s linear infinite;
+}
+
+/* styles.css */
+.invisible-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.invisible-scrollbar-horizontal::-webkit-scrollbar:horizontal {
+  display: none;
+}
+
+td {
+  @apply min-h-[58px];
 }

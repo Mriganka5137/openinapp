@@ -11,7 +11,7 @@ const MobileSidebar = () => {
   return (
     <div
       className={cn(
-        " fixed top-0 bg-white h-screen w-[300px] rounded-r-[20px] rounded-br-[20px] z-50 sm:hidden duration-500 ease-in-out transition-all",
+        " fixed top-0 bg-white h-screen w-[300px] rounded-r-[20px] rounded-br-[20px] z-50 lg:hidden duration-500 ease-in-out transition-all",
         visible ? " left-0" : "-left-full"
       )}
     >

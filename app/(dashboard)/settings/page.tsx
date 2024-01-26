@@ -1,7 +1,11 @@
 import React from "react";
 
 const SettingsPage = () => {
-  return <div>SettingsPage</div>;
+  return (
+    <div>
+      <h1 className=" text-4xl font-medium text-center mt-20">Settings</h1>
+    </div>
+  );
 };
 
 export default SettingsPage;

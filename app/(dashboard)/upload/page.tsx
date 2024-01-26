@@ -4,8 +4,8 @@ import UploaderContainer from "@/components/upload/UploaderContainer";
 
 const page = () => {
   return (
-    <section className=" w-full  min-h-screen overflow-y-auto p-5">
-      <Header className="sm:hidden" />
+    <section className=" w-full  min-h-screen overflow-x-hidden p-5 ">
+      <Header className="lg:hidden" />
       <UploaderContainer />
       <DataTable />
     </section>

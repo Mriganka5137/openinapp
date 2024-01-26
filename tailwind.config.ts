@@ -26,6 +26,7 @@ const config: Config = {
         "color-light-beerus": "hsl(var(--color-light-beerus))",
         "color-light-trunks": "hsl(var(--color-light-trunks))",
         "color-error": "hsl(var(--color-error))",
+        "color-select-border": "hsl(var(--color-select-border))",
       },
       fontFamily: {
         montserrat: ["var(--font-montserrat)"],
