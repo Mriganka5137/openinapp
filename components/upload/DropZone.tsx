@@ -7,8 +7,6 @@ import { useStore } from "@/lib/store";
 
 const DropZone = () => {
   const { files, setFiles } = useStore();
-  // const [files, setFiles] = useState<FileList | null>(null);
-  // const [isSubmitting, setIsSubmitting] = useState(false);
   const handleDragOver = (e: React.DragEvent) => {
     e.preventDefault();
   };
