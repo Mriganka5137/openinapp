@@ -49,14 +49,12 @@ const UploaderContainer = () => {
         disabled={submitted}
         onClick={handleClick}
         className={cn(
-          " w-full bg-color-brand rounded-[10px] text-white font-montserrat font-semibold text-base py-2.5 mt-5",
+          " w-full bg-color-brand rounded-[10px] text-white font-montserrat font-semibold text-base py-2.5 mt-5 flex justify-center items-center",
           submitted && "opacity-40"
         )}
       >
         {submitting ? (
-          <span className="animate-spin">
-            Uploading...
-          </span> /* Add spin animation */
+          <div className="w-8 h-8 border-4 border-white rounded-full loader"></div>
         ) : (
           <span className=" text-[14px] font-figTree font-light">
             <Image

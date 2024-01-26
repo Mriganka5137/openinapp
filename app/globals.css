@@ -39,3 +39,16 @@
     @apply w-full bg-color-input-background px-4 py-2.5 font-lato rounded-[10px] focus:outline-none mb-5 focus:bg-color-input-active transition-colors duration-200 ease-in-out text-base;
   }
 }
+@keyframes loader-rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  border-right-color: transparent;
+  animation: loader-rotate 1s linear infinite;
+}
