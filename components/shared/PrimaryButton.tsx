@@ -3,9 +3,10 @@ import React from "react";
 interface Props {
   children: React.ReactNode;
   handleClick?: () => void;
+  isSubmitting?: boolean;
 }
 
-const PrimaryButton = ({ children, handleClick }: Props) => {
+const PrimaryButton = ({ children, handleClick, isSubmitting }: Props) => {
   return (
     <button
       onClick={handleClick}
