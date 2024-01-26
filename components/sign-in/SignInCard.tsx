@@ -74,7 +74,7 @@ const SignInCard = () => {
       </form>
       <div className="flex items-center mt-5 justify-center max-sm:flex-col gap-1">
         <p className="font-lato text-base  text-center text-color-secondary-text font-light">
-          Don't have an account?{" "}
+          Don&apos;t have an account?{" "}
         </p>
         <Link href="" className="text-color-link">
           Register here
