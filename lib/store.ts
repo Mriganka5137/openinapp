@@ -1,5 +1,7 @@
 import { create } from "zustand";
 interface StoreProps {
+  submitted: boolean;
+  setSubmitted: (submitted: boolean) => void;
   visible: boolean;
   setVisible: (visible: boolean) => void;
   files: FileList | null;
@@ -22,6 +24,8 @@ export interface CsvData {
 }
 
 export const useStore = create<StoreProps>((set) => ({
+  submitted: false,
+  setSubmitted: (submitted) => set({ submitted }),
   data: [],
   setData: (data) => set({ data }),
   columns: [],

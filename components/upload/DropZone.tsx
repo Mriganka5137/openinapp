@@ -12,12 +12,10 @@ const DropZone = () => {
   };
   const handleDrop = (e: React.DragEvent) => {
     e.preventDefault();
-    // If file is not csv, xlsx or xls, show error
     if (!e.dataTransfer.files[0].name.match(/(\.csv|\.xlsx|\.xls)$/i)) {
       console.log("File type not supported");
       return;
     }
-    console.log(e.dataTransfer.files);
     setFiles(e.dataTransfer.files);
   };
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {

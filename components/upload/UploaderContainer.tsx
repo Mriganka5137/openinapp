@@ -3,11 +3,13 @@ import React, { useState } from "react";
 import DropZone from "./DropZone";
 import { CsvData, useStore } from "@/lib/store";
 import Papa from "papaparse";
+import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 const UploaderContainer = () => {
   const [submitting, setSubmitting] = useState<boolean>(false);
-  const { files, setData, setColumns, setValues } = useStore();
-  console.log(files);
+  const { files, setData, setColumns, setValues, submitted, setSubmitted } =
+    useStore();
   const handleClick = () => {
     if (!files || files.length === 0) {
       // Handle the case where no file is selected
@@ -34,7 +36,8 @@ const UploaderContainer = () => {
         setValues(valueArray);
         setTimeout(() => {
           setSubmitting(false);
-        }, 2000);
+          setSubmitted(true);
+        }, 1000);
       },
     });
   };
@@ -43,16 +46,28 @@ const UploaderContainer = () => {
     <div className=" max-w-[596px]   bg-white mx-auto mt-[137px] max-sm:mt-6 rounded-lg p-4">
       <DropZone />
       <button
-        disabled={submitting}
+        disabled={submitted}
         onClick={handleClick}
-        className=" w-full bg-color-brand rounded-[10px] text-white font-montserrat font-semibold text-base py-2.5 mt-5"
+        className={cn(
+          " w-full bg-color-brand rounded-[10px] text-white font-montserrat font-semibold text-base py-2.5 mt-5",
+          submitted && "opacity-40"
+        )}
       >
         {submitting ? (
           <span className="animate-spin">
             Uploading...
           </span> /* Add spin animation */
         ) : (
-          <span>Upload</span>
+          <span className=" text-[14px] font-figTree font-light">
+            <Image
+              src="/assets/upload.svg"
+              width={20}
+              height={20}
+              alt="upload"
+              className="inline-block mr-2"
+            />
+            Upload
+          </span>
         )}
       </button>
     </div>
