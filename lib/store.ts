@@ -1,6 +1,7 @@
 import { create } from "zustand";
 interface StoreProps {
   visible: boolean;
+
   setVisible: (visible: boolean) => void;
 }
 

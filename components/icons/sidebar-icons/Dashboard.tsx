@@ -1,12 +1,20 @@
+"use client";
 import { cn } from "@/lib/utils";
+import { usePathname } from "next/navigation";
 import React from "react";
 interface Props {
   className?: string;
 }
 const Dashboard = ({ className }: Props) => {
+  const path = usePathname();
+  const route = "/dashboard";
   return (
     <svg
-      className={cn("fill-color-sidebar-icon w-6 h-6", className)}
+      className={cn(
+        "fill-color-sidebar-icon w-6 h-6",
+        className,
+        path === route && "fill-color-brand"
+      )}
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
