@@ -33,7 +33,7 @@ const SignInCard = () => {
       <AuthButtonGroup />
       <form
         onSubmit={onSubmit}
-        className="w-full bg-white p-8 flex flex-col mt-7 rounded-[20px] shadow max-sm:py-8 max-sm:px-5"
+        className="w-full bg-white p-8 flex flex-col mt-7 rounded-[20px]  max-sm:py-8 max-sm:px-5"
       >
         <label htmlFor="email">Email address</label>
         {errors.email && (
