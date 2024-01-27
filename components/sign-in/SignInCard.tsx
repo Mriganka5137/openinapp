@@ -33,7 +33,7 @@ const SignInCard = () => {
       <AuthButtonGroup />
       <form
         onSubmit={onSubmit}
-        className="w-full bg-white p-8 flex flex-col mt-7 rounded-lg shadow-sm max-sm:py-8 max-sm:px-5"
+        className="w-full bg-white p-8 flex flex-col mt-7 rounded-[20px] shadow max-sm:py-8 max-sm:px-5"
       >
         <label htmlFor="email">Email address</label>
         {errors.email && (
@@ -66,7 +66,7 @@ const SignInCard = () => {
         </Link>
         <button
           disabled={submiting}
-          className=" w-full bg-color-brand rounded-[10px] text-white font-montserrat font-semibold text-base py-2.5 mt-5 hover:-translate-y-[1px] transition-transform duration-200 ease-in-out"
+          className=" w-full bg-color-brand rounded-[10px] text-white font-montserrat font-semibold text-base py-2.5 mt-5 hover:-translate-y-[1px] transition-transform duration-200 ease-in-out tracking-wide"
           type="submit"
         >
           Sign In

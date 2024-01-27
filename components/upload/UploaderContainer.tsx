@@ -49,7 +49,7 @@ const UploaderContainer = () => {
         disabled={submitted}
         onClick={handleClick}
         className={cn(
-          " w-full bg-color-brand rounded-[10px] text-white font-montserrat font-semibold text-base py-2.5 mt-5 flex justify-center items-center",
+          " w-full bg-color-brand rounded-[10px] text-white font-montserrat font-semibold text-base py-2.5 mt-5 flex justify-center items-center min-h-[56px]",
           submitted && "opacity-40"
         )}
       >
@@ -62,7 +62,7 @@ const UploaderContainer = () => {
               width={20}
               height={20}
               alt="upload"
-              className="inline-block mr-2"
+              className="inline-block mr-2 w-6 h-6"
             />
             Upload
           </span>

@@ -12,7 +12,7 @@ const ProfileIcon = () => {
           alt="profile"
           width={100}
           height={100}
-          className="object-cover  w-[52px] h-[52px]"
+          className="object-cover  w-[52px] h-[52px] cursor-pointer"
         />
       </div>
     </div>
