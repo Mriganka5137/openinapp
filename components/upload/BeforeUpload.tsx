@@ -1,21 +1,27 @@
 import React from "react";
 interface Props {
   handleFileChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  errors?: boolean;
 }
 
-const BeforeUpload = ({ handleFileChange }: Props) => {
+const BeforeUpload = ({ handleFileChange, errors }: Props) => {
   return (
     <div className=" flex gap-1">
-      <p className="text-color-light-trunks">
-        <span className="max-sm:hidden">Drop your Excel sheet here or</span>
-        <span className="sm:hidden"> Upload your Excel sheet </span>
-      </p>
+      {errors && (
+        <p className="text-color-error ">Please upload a .csv file only</p>
+      )}
+      {!errors && (
+        <p className="text-color-light-trunks">
+          <span className="max-sm:hidden">Drop your Excel sheet here or</span>
+          <span className="sm:hidden"> Upload your Excel sheet </span>
+        </p>
+      )}
       <input
         id="file"
         type="file"
         onChange={handleFileChange}
         multiple
-        accept=".xlsx, .xls, .csv"
+        accept=".csv"
         placeholder="browse"
         className="hidden"
       />
